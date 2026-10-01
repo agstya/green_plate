@@ -1,0 +1,183 @@
+{
+  "title": "Calm-Belly Plant Kitchen",
+  "subtitle": "Four vegan, low-FODMAP, gluten-free recipes and a week to cook them in",
+  "kicker": "A Green Plate cookbook",
+  "for": "Agastya",
+  "diets": ["vegan", "low-fodmap", "gluten-free"],
+  "intro": "Bright, gentle food: no onion or garlic, but plenty of flavour from garlic-infused oil, the green tops of spring onions, ginger, citrus and toasted seeds.",
+  "recipes": [
+    {
+      "title": "Lemon-Herb Tofu & Quinoa Bowl",
+      "description": "Crisp maple-tamari tofu over fluffy quinoa with charred zucchini, carrot ribbons and a zingy lemon-herb drizzle.",
+      "cuisine": "Modern",
+      "course": "Dinner",
+      "serves": 2,
+      "prep_min": 15,
+      "cook_min": 25,
+      "difficulty": "easy",
+      "ingredients": [
+        {"group": "Bowl", "item": "quinoa, rinsed", "qty": "3/4 cup", "aisle": "Grains & Pasta"},
+        {"group": "Bowl", "item": "firm tofu", "qty": "400 g", "note": "pressed 10 minutes"},
+        {"group": "Bowl", "item": "zucchini", "qty": "1 medium", "note": "sliced into half-moons"},
+        {"group": "Bowl", "item": "carrot", "qty": "1 large", "note": "peeled into ribbons"},
+        {"group": "Bowl", "item": "baby spinach", "qty": "2 cups"},
+        {"group": "Bowl", "item": "cherry tomatoes", "qty": "1 cup", "note": "halved"},
+        {"group": "Bowl", "item": "pumpkin seeds", "qty": "2 tbsp", "note": "toasted"},
+        {"group": "Glaze", "item": "tamari (gluten-free)", "qty": "1 1/2 tbsp"},
+        {"group": "Glaze", "item": "maple syrup", "qty": "1 tbsp"},
+        {"group": "Glaze", "item": "cornstarch", "qty": "1 tbsp"},
+        {"group": "Lemon-herb drizzle", "item": "garlic-infused olive oil", "qty": "3 tbsp"},
+        {"group": "Lemon-herb drizzle", "item": "lemon", "qty": "1", "note": "zest and juice"},
+        {"group": "Lemon-herb drizzle", "item": "parsley, finely chopped", "qty": "1/4 cup"},
+        {"group": "Lemon-herb drizzle", "item": "spring onion, green parts only", "qty": "2", "note": "sliced"},
+        {"group": "Lemon-herb drizzle", "item": "salt and pepper"}
+      ],
+      "steps": [
+        "Simmer the quinoa in **1 1/2 cups** salted water, covered, for 15 minutes. Turn off the heat and leave the lid on for 5 minutes, then fluff.",
+        "Cut the pressed tofu into 2 cm cubes and toss with the cornstarch and a pinch of salt.",
+        "Heat 1 tbsp of the garlic-infused oil in a large non-stick pan. Fry the tofu for 8–10 minutes, turning, until golden on all sides.",
+        "Whisk the tamari and maple syrup, pour over the tofu and toss for 1 minute until sticky and glazed. Set aside.",
+        "In the same pan, char the zucchini for 3–4 minutes over high heat. Wilt the spinach in for the last 30 seconds.",
+        "Whisk the remaining oil with the lemon zest, juice, parsley, spring onion greens, salt and pepper.",
+        "Divide the quinoa between bowls, top with tofu, vegetables, carrot ribbons and tomatoes, then spoon over the drizzle and scatter with pumpkin seeds."
+      ],
+      "swaps": [
+        {"from": "garlic", "to": "garlic-infused oil", "why": "Fructans in garlic don't dissolve in oil, so you keep the flavour without the FODMAPs."},
+        {"from": "onion", "to": "spring onion greens", "why": "The green tops are low-FODMAP; the white bulbs are not."},
+        {"from": "soy sauce", "to": "tamari (gluten-free)", "why": "Regular soy sauce is brewed with wheat."}
+      ],
+      "tips": [
+        "Pressing the tofu is what makes it crisp — wrap it in a clean towel under a heavy pan.",
+        "Leftovers keep 3 days; store the drizzle separately."
+      ],
+      "nutrition": {"calories": 610, "protein_g": 32, "carbs_g": 52, "fat_g": 31, "fiber_g": 9}
+    },
+    {
+      "title": "Golden Pumpkin & Red Lentil Curry",
+      "description": "A cosy coconut curry with sweet kabocha, ginger and warm spices, finished with lime and fresh coriander.",
+      "cuisine": "Indian-inspired",
+      "course": "Dinner",
+      "serves": 4,
+      "prep_min": 15,
+      "cook_min": 30,
+      "difficulty": "easy",
+      "ingredients": [
+        {"group": "Curry", "item": "garlic-infused oil", "qty": "2 tbsp"},
+        {"group": "Curry", "item": "asafoetida (gluten-free)", "qty": "1/4 tsp"},
+        {"group": "Curry", "item": "fresh ginger, grated", "qty": "1 tbsp"},
+        {"group": "Curry", "item": "ground cumin", "qty": "2 tsp"},
+        {"group": "Curry", "item": "ground turmeric", "qty": "1 tsp"},
+        {"group": "Curry", "item": "garam masala", "qty": "1 tsp"},
+        {"group": "Curry", "item": "chili flakes", "qty": "1/2 tsp", "optional": true},
+        {"group": "Curry", "item": "kabocha pumpkin, peeled and cubed", "qty": "500 g"},
+        {"group": "Curry", "item": "canned lentils, drained and rinsed", "qty": "2 cups"},
+        {"group": "Curry", "item": "canned tomatoes", "qty": "400 g"},
+        {"group": "Curry", "item": "coconut milk", "qty": "1 1/2 cups"},
+        {"group": "Curry", "item": "water", "qty": "1/2 cup"},
+        {"group": "Curry", "item": "baby spinach", "qty": "2 cups"},
+        {"group": "To serve", "item": "basmati rice", "qty": "1 1/2 cups"},
+        {"group": "To serve", "item": "lime", "qty": "1", "note": "cut into wedges"},
+        {"group": "To serve", "item": "cilantro", "qty": "1 small bunch"}
+      ],
+      "steps": [
+        "Start the rice: rinse until the water runs clear, then cook with **2 1/4 cups** water, covered, on low for 15 minutes.",
+        "Warm the garlic-infused oil in a large pot over medium heat. Add the asafoetida and ginger and stir for 30 seconds.",
+        "Add the cumin, turmeric, garam masala and chili flakes and toast for 30 seconds until fragrant.",
+        "Add the pumpkin, tomatoes, coconut milk and water. Simmer, partly covered, for 15–18 minutes until the pumpkin is tender.",
+        "Stir in the lentils and spinach and cook 3 minutes more. Season with salt.",
+        "Serve over rice with lime wedges and plenty of fresh cilantro."
+      ],
+      "swaps": [
+        {"from": "onion & garlic", "to": "asafoetida + garlic-infused oil", "why": "Asafoetida adds the savoury, oniony depth. Choose one cut with rice flour, not wheat."},
+        {"from": "butternut squash", "to": "kabocha pumpkin", "why": "Kabocha is low-FODMAP in generous serves; butternut is only low in small amounts."}
+      ],
+      "tips": ["Tastes even better the next day. Freezes well for up to 2 months."],
+      "nutrition": {"calories": 520, "protein_g": 15, "carbs_g": 72, "fat_g": 21, "fiber_g": 11}
+    },
+    {
+      "title": "Peanut-Lime Rice Noodle Stir-Fry",
+      "description": "Silky rice noodles tossed with crunchy vegetables and a creamy peanut, lime and chili sauce. Ready in 25 minutes.",
+      "cuisine": "Thai-inspired",
+      "course": "Lunch",
+      "serves": 2,
+      "prep_min": 10,
+      "cook_min": 15,
+      "difficulty": "easy",
+      "ingredients": [
+        {"group": "Stir-fry", "item": "flat rice noodles", "qty": "200 g"},
+        {"group": "Stir-fry", "item": "firm tofu", "qty": "200 g", "note": "cubed"},
+        {"group": "Stir-fry", "item": "bok choy", "qty": "2 heads", "note": "quartered"},
+        {"group": "Stir-fry", "item": "red bell pepper", "qty": "1/2", "note": "thinly sliced"},
+        {"group": "Stir-fry", "item": "carrot", "qty": "1", "note": "julienned"},
+        {"group": "Stir-fry", "item": "garlic-infused oil", "qty": "1 tbsp"},
+        {"group": "Sauce", "item": "peanut butter", "qty": "3 tbsp", "note": "smooth"},
+        {"group": "Sauce", "item": "tamari (gluten-free)", "qty": "2 tbsp"},
+        {"group": "Sauce", "item": "lime", "qty": "1", "note": "juiced"},
+        {"group": "Sauce", "item": "maple syrup", "qty": "1 tbsp"},
+        {"group": "Sauce", "item": "fresh ginger, grated", "qty": "1 tsp"},
+        {"group": "Sauce", "item": "warm water", "qty": "3 tbsp"},
+        {"group": "Garnish", "item": "roasted peanuts, chopped", "qty": "2 tbsp"},
+        {"group": "Garnish", "item": "spring onion, green parts only", "qty": "2"},
+        {"group": "Garnish", "item": "red chili, sliced", "qty": "1", "optional": true}
+      ],
+      "steps": [
+        "Soak or cook the rice noodles according to the packet, then rinse under cold water and drain well.",
+        "Whisk all the sauce ingredients until smooth and pourable.",
+        "Heat the oil in a wok over high heat. Fry the tofu for 5 minutes until golden, then push to one side.",
+        "Add the carrot, pepper and bok choy and stir-fry for 3 minutes until just tender-crisp.",
+        "Add the noodles and sauce and toss for 1–2 minutes until everything is glossy and hot.",
+        "Top with peanuts, spring onion greens and chili."
+      ],
+      "swaps": [
+        {"from": "soy sauce", "to": "tamari (gluten-free)", "why": "Keeps it gluten-free."},
+        {"from": "honey", "to": "maple syrup", "why": "Vegan, and low-FODMAP where honey is not."}
+      ],
+      "nutrition": {"calories": 690, "protein_g": 26, "carbs_g": 92, "fat_g": 25, "fiber_g": 7}
+    },
+    {
+      "title": "Berry Chia Overnight Oats",
+      "description": "A make-ahead breakfast jar: creamy oats and chia with maple, cinnamon and a pile of fresh berries.",
+      "cuisine": "Breakfast",
+      "course": "Breakfast",
+      "serves": 2,
+      "prep_min": 5,
+      "cook_min": 0,
+      "difficulty": "easy",
+      "ingredients": [
+        {"item": "rolled oats (certified gluten-free)", "qty": "1 cup"},
+        {"item": "chia seeds", "qty": "2 tbsp"},
+        {"item": "unsweetened almond milk", "qty": "1 1/4 cups"},
+        {"item": "maple syrup", "qty": "1 tbsp"},
+        {"item": "ground cinnamon", "qty": "1/2 tsp"},
+        {"item": "vanilla extract", "qty": "1/2 tsp"},
+        {"item": "strawberries", "qty": "1 cup", "note": "sliced"},
+        {"item": "blueberries", "qty": "1/2 cup"},
+        {"item": "pumpkin seeds", "qty": "1 tbsp"}
+      ],
+      "steps": [
+        "Stir the oats, chia, almond milk, maple syrup, cinnamon and vanilla together in a bowl or two jars.",
+        "Cover and refrigerate overnight, or for at least 4 hours.",
+        "In the morning, loosen with a splash more almond milk and top with berries and pumpkin seeds."
+      ],
+      "tips": ["Make four jars on Sunday — they keep for 4 days in the fridge."],
+      "nutrition": {"calories": 340, "protein_g": 10, "carbs_g": 50, "fat_g": 11, "fiber_g": 11}
+    }
+  ],
+  "meal_plan": {
+    "title": "A calm-belly week",
+    "intro": "Cook twice, eat all week. Curry and quinoa are batch-cooked on Sunday and Wednesday.",
+    "days": [
+      {"day": "Mon", "breakfast": "Berry chia overnight oats", "lunch": "Leftover pumpkin curry & rice", "dinner": "Lemon-herb tofu & quinoa bowl"},
+      {"day": "Tue", "breakfast": "Berry chia overnight oats", "lunch": "Quinoa bowl leftovers", "dinner": "Peanut-lime rice noodles"},
+      {"day": "Wed", "breakfast": "Berry chia overnight oats", "lunch": "Noodle leftovers", "dinner": "Golden pumpkin & lentil curry"},
+      {"day": "Thu", "breakfast": "Berry chia overnight oats", "lunch": "Curry & rice", "dinner": "Lemon-herb tofu & quinoa bowl"},
+      {"day": "Fri", "breakfast": "Oats with sliced banana (firm, small)", "lunch": "Quinoa bowl leftovers", "dinner": "Peanut-lime rice noodles"},
+      {"day": "Sat", "breakfast": "Oats with berries", "lunch": "Noodle leftovers", "dinner": "Golden pumpkin & lentil curry"},
+      {"day": "Sun", "breakfast": "Oats with berries", "lunch": "Curry & rice", "dinner": "Batch-cook for next week"}
+    ],
+    "prep_ahead": [
+      "Sunday: cook the curry and a pot of rice; make four jars of overnight oats.",
+      "Wednesday: cook a second batch of quinoa and press the tofu for Thursday."
+    ]
+  }
+}

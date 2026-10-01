@@ -1,0 +1,16 @@
+{
+  "name": "green-plate-marketplace",
+  "owner": {
+    "name": "Agastya Kommanamanchi"
+  },
+  "metadata": {
+    "description": "Green Plate: diet-aware vegetarian & vegan recipes rendered as illustrated PDF cookbooks."
+  },
+  "plugins": [
+    {
+      "name": "green-plate",
+      "source": "./",
+      "description": "Diet-aware vegetarian recipes, meal plans and shopping lists, rendered as an illustrated PDF cookbook."
+    }
+  ]
+}

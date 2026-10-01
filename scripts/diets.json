@@ -1,0 +1,880 @@
+{
+  "_about": "Ingredient rules used by check_recipe.py. 'avoid' terms make a recipe fail a diet; 'limit' terms produce portion warnings. 'safe_phrases' are removed from an ingredient name before matching (e.g. 'peanut butter' is not dairy butter). 'neutralizers' mark the whole ingredient as compliant (e.g. anything labelled 'gluten-free'). Matching is case-insensitive and on whole words. A 'limit' group may list 'unless' phrases that exempt it (e.g. almond milk is not a portion of almonds).",
+  "vegetarian": {
+    "label": "Vegetarian",
+    "short": "VEG",
+    "color": "#5B8C5A",
+    "description": "No meat, poultry, fish or seafood, and no hidden animal products such as gelatin or animal rennet.",
+    "includes": [],
+    "neutralizers": [
+      "vegetarian",
+      "vegan",
+      "plant-based",
+      "meat-free",
+      "meatless",
+      "mock",
+      "vegetable stock",
+      "veggie stock",
+      "vegetable broth"
+    ],
+    "safe_phrases": [
+      "vegetarian worcestershire",
+      "vegan worcestershire",
+      "agar agar",
+      "agar-agar",
+      "vegetarian rennet",
+      "microbial rennet"
+    ],
+    "avoid": [
+      {
+        "terms": [
+          "chicken",
+          "beef",
+          "pork",
+          "lamb",
+          "mutton",
+          "goat meat",
+          "veal",
+          "turkey",
+          "duck",
+          "bacon",
+          "ham",
+          "sausage",
+          "salami",
+          "pepperoni",
+          "prosciutto",
+          "chorizo",
+          "mince",
+          "venison"
+        ],
+        "reason": "meat or poultry",
+        "swap": "firm tofu, tempeh, seitan (not gluten-free), jackfruit, or lentils"
+      },
+      {
+        "terms": [
+          "fish",
+          "salmon",
+          "tuna",
+          "cod",
+          "anchovy",
+          "anchovies",
+          "sardine",
+          "sardines",
+          "shrimp",
+          "prawn",
+          "prawns",
+          "crab",
+          "lobster",
+          "squid",
+          "octopus",
+          "clam",
+          "clams",
+          "mussel",
+          "mussels",
+          "oyster sauce",
+          "fish sauce",
+          "bonito",
+          "dashi"
+        ],
+        "reason": "fish or seafood",
+        "swap": "kombu + shiitake stock, seaweed flakes, or vegetarian 'fish' sauce"
+      },
+      {
+        "terms": [
+          "gelatin",
+          "gelatine",
+          "lard",
+          "suet",
+          "tallow",
+          "chicken stock",
+          "beef stock",
+          "bone broth",
+          "animal rennet",
+          "worcestershire",
+          "worcestershire sauce",
+          "parmesan",
+          "parmigiano reggiano",
+          "pecorino",
+          "grana padano",
+          "gorgonzola"
+        ],
+        "reason": "hidden animal product (traditional Parmesan, Pecorino, Grana Padano and Gorgonzola are made with animal rennet)",
+        "swap": "agar-agar, vegetable stock, vegetarian Worcestershire, or a vegetarian hard cheese"
+      }
+    ],
+    "limit": []
+  },
+  "vegan": {
+    "label": "Vegan",
+    "short": "VGN",
+    "color": "#3E7B4F",
+    "description": "Fully plant-based: no meat or fish, no dairy, eggs or honey.",
+    "includes": [
+      "vegetarian"
+    ],
+    "neutralizers": [
+      "vegan",
+      "dairy-free",
+      "dairy free",
+      "non-dairy",
+      "plant-based",
+      "plant based",
+      "egg-free",
+      "eggless"
+    ],
+    "safe_phrases": [
+      "peanut butter",
+      "almond butter",
+      "cashew butter",
+      "nut butter",
+      "sunflower seed butter",
+      "seed butter",
+      "cocoa butter",
+      "apple butter",
+      "coconut milk",
+      "coconut cream",
+      "coconut yogurt",
+      "coconut yoghurt",
+      "oat milk",
+      "soy milk",
+      "soya milk",
+      "almond milk",
+      "rice milk",
+      "cashew milk",
+      "oat cream",
+      "soy yogurt",
+      "soy yoghurt",
+      "cashew cream",
+      "cashew cheese",
+      "nutritional yeast",
+      "flax egg",
+      "chia egg",
+      "egg replacer",
+      "cream of tartar",
+      "butternut",
+      "butter beans",
+      "butter bean",
+      "butterhead",
+      "maple syrup",
+      "agave syrup",
+      "date syrup",
+      "eggplant",
+      "milk thistle"
+    ],
+    "avoid": [
+      {
+        "terms": [
+          "milk",
+          "butter",
+          "ghee",
+          "cream",
+          "cheese",
+          "paneer",
+          "yogurt",
+          "yoghurt",
+          "curd",
+          "dahi",
+          "buttermilk",
+          "whey",
+          "casein",
+          "khoa",
+          "khoya",
+          "mascarpone",
+          "ricotta",
+          "mozzarella",
+          "feta",
+          "halloumi",
+          "cheddar",
+          "sour cream",
+          "creme fraiche",
+          "condensed milk",
+          "evaporated milk",
+          "malai"
+        ],
+        "reason": "dairy",
+        "swap": "plant milk, coconut cream, cashew cream, vegan butter, firm tofu (for paneer), or coconut/soy yogurt"
+      },
+      {
+        "terms": [
+          "egg",
+          "eggs",
+          "egg yolk",
+          "egg white",
+          "egg whites",
+          "mayonnaise",
+          "mayo",
+          "meringue",
+          "aioli"
+        ],
+        "reason": "egg",
+        "swap": "flax egg (1 Tbsp ground flax + 3 Tbsp water), aquafaba, or vegan mayo"
+      },
+      {
+        "terms": [
+          "honey"
+        ],
+        "reason": "honey",
+        "swap": "maple syrup, agave or date syrup"
+      }
+    ],
+    "limit": []
+  },
+  "low-fodmap": {
+    "label": "Low-FODMAP",
+    "short": "LF",
+    "color": "#C58B3C",
+    "description": "Avoids high-FODMAP fermentable carbs. Based on Monash University FODMAP guidance; serving sizes matter, so check the Monash FODMAP app for the latest thresholds.",
+    "includes": [],
+    "neutralizers": [
+      "garlic-infused",
+      "garlic infused",
+      "onion-infused",
+      "onion infused",
+      "infused oil",
+      "green part",
+      "green parts",
+      "green tops",
+      "greens only",
+      "green ends",
+      "lactose-free",
+      "lactose free",
+      "low-fodmap",
+      "low fodmap"
+    ],
+    "safe_phrases": [
+      "garlic chives",
+      "firm tofu",
+      "extra-firm tofu",
+      "extra firm tofu",
+      "pressed tofu",
+      "spring onion greens",
+      "scallion greens",
+      "leek leaves",
+      "leek greens",
+      "oyster mushroom",
+      "oyster mushrooms",
+      "maple syrup",
+      "rice milk",
+      "almond milk",
+      "sourdough spelt",
+      "spelt sourdough",
+      "gluten-free bread",
+      "gluten-free pasta",
+      "gluten free bread",
+      "gluten free pasta",
+      "rice noodles",
+      "hard cheese",
+      "cheddar",
+      "parmesan",
+      "feta",
+      "mozzarella",
+      "coconut milk"
+    ],
+    "avoid": [
+      {
+        "terms": [
+          "garlic",
+          "garlic powder",
+          "garlic paste",
+          "onion",
+          "onions",
+          "onion powder",
+          "red onion",
+          "shallot",
+          "shallots",
+          "leek",
+          "leeks",
+          "spring onion",
+          "scallion",
+          "scallions",
+          "green onion",
+          "green onions"
+        ],
+        "reason": "fructans (onion & garlic family)",
+        "swap": "garlic-infused oil, green parts of spring onion/leek, chives, or a pinch of asafoetida (choose a gluten-free one if needed)"
+      },
+      {
+        "terms": [
+          "apple",
+          "apples",
+          "pear",
+          "pears",
+          "mango",
+          "watermelon",
+          "cherries",
+          "dried fruit",
+          "dates",
+          "figs",
+          "prunes",
+          "raisins",
+          "apple juice",
+          "agave",
+          "honey",
+          "high fructose corn syrup",
+          "fruit juice concentrate"
+        ],
+        "reason": "excess fructose or polyols",
+        "swap": "orange, kiwi, pineapple, strawberries, blueberries (small serve), or maple syrup"
+      },
+      {
+        "terms": [
+          "cauliflower",
+          "mushroom",
+          "mushrooms",
+          "button mushrooms",
+          "portobello",
+          "asparagus",
+          "artichoke",
+          "artichokes",
+          "sugar snap peas",
+          "snow peas"
+        ],
+        "reason": "polyols or fructans in vegetables",
+        "swap": "zucchini, carrot, eggplant, bell pepper, green beans, bok choy, or oyster mushrooms"
+      },
+      {
+        "terms": [
+          "kidney beans",
+          "black beans",
+          "baked beans",
+          "split peas",
+          "soybeans",
+          "silken tofu",
+          "soy milk",
+          "soya milk"
+        ],
+        "reason": "GOS (galacto-oligosaccharides) in legumes",
+        "swap": "firm tofu, tempeh, small serves of canned lentils or chickpeas"
+      },
+      {
+        "terms": [
+          "cashew",
+          "cashews",
+          "pistachio",
+          "pistachios"
+        ],
+        "reason": "GOS/fructans in nuts",
+        "swap": "walnuts, peanuts, macadamias, pecans (if not nut-free) or pumpkin seeds"
+      },
+      {
+        "terms": [
+          "milk",
+          "yogurt",
+          "yoghurt",
+          "ricotta",
+          "cottage cheese",
+          "cream cheese",
+          "condensed milk",
+          "evaporated milk",
+          "ice cream",
+          "buttermilk"
+        ],
+        "reason": "lactose",
+        "swap": "lactose-free milk/yogurt or hard cheeses like cheddar and parmesan"
+      },
+      {
+        "terms": [
+          "wheat",
+          "wheat flour",
+          "all-purpose flour",
+          "plain flour",
+          "bread",
+          "pasta",
+          "couscous",
+          "rye",
+          "barley",
+          "inulin",
+          "chicory root"
+        ],
+        "reason": "fructans in wheat, rye and barley (in typical serves)",
+        "swap": "rice, quinoa, oats, polenta, gluten-free pasta/bread or spelt sourdough"
+      }
+    ],
+    "limit": [
+      {
+        "terms": [
+          "chickpeas",
+          "chickpea",
+          "garbanzo"
+        ],
+        "note": "Only canned & rinsed chickpeas are low-FODMAP, in small serves (about 1/4 cup per person)."
+      },
+      {
+        "terms": [
+          "lentils",
+          "lentil",
+          "dal",
+          "dhal"
+        ],
+        "note": "Canned & rinsed lentils are low-FODMAP at about 1/2 cup per person; dried/boiled lentils are higher."
+      },
+      {
+        "terms": [
+          "avocado"
+        ],
+        "note": "Keep to a small serve (about 30 g per person)."
+      },
+      {
+        "terms": [
+          "sweet potato",
+          "sweet potatoes"
+        ],
+        "note": "Keep to about 1/2 cup per person."
+      },
+      {
+        "terms": [
+          "almond",
+          "almonds",
+          "hazelnut",
+          "hazelnuts"
+        ],
+        "note": "Limit to about 10 nuts per person.",
+        "unless": [
+          "almond milk"
+        ]
+      },
+      {
+        "terms": [
+          "celery"
+        ],
+        "note": "Keep to a small serve (under about 10 g per person)."
+      },
+      {
+        "terms": [
+          "butternut squash",
+          "butternut"
+        ],
+        "note": "Keep to a small serve; larger amounts contain mannitol."
+      },
+      {
+        "terms": [
+          "oats",
+          "rolled oats",
+          "oat"
+        ],
+        "note": "Up to about 1/2 cup (uncooked) per serve."
+      },
+      {
+        "terms": [
+          "coconut milk"
+        ],
+        "note": "Canned coconut milk is fine in moderate serves (about 1/2 cup per person)."
+      },
+      {
+        "terms": [
+          "broccoli"
+        ],
+        "note": "Heads are fine in normal serves; the stalks are higher in fructose."
+      },
+      {
+        "terms": [
+          "beetroot",
+          "beet",
+          "beets"
+        ],
+        "note": "Keep to about 2 thin slices per person."
+      }
+    ]
+  },
+  "gluten-free": {
+    "label": "Gluten-Free",
+    "short": "GF",
+    "color": "#B5651D",
+    "description": "No wheat, barley, rye or their derivatives. Oats must be certified gluten-free.",
+    "includes": [],
+    "neutralizers": [
+      "gluten-free",
+      "gluten free",
+      "certified gf",
+      "(gf)",
+      "tamari",
+      "coconut aminos"
+    ],
+    "safe_phrases": [
+      "rice flour",
+      "chickpea flour",
+      "gram flour",
+      "besan",
+      "almond flour",
+      "coconut flour",
+      "buckwheat flour",
+      "tapioca flour",
+      "corn flour",
+      "cornflour",
+      "maize flour",
+      "sorghum flour",
+      "millet flour",
+      "teff flour",
+      "quinoa flour",
+      "potato starch",
+      "potato flour",
+      "arrowroot",
+      "rice noodles",
+      "rice paper",
+      "glass noodles",
+      "corn tortilla",
+      "corn tortillas",
+      "rice cakes",
+      "buckwheat",
+      "cornmeal",
+      "polenta",
+      "jowar",
+      "bajra",
+      "ragi",
+      "rice vermicelli",
+      "sweet potato noodles"
+    ],
+    "avoid": [
+      {
+        "terms": [
+          "wheat",
+          "flour",
+          "all-purpose flour",
+          "maida",
+          "atta",
+          "semolina",
+          "sooji",
+          "rava",
+          "durum",
+          "spelt",
+          "farro",
+          "kamut",
+          "einkorn",
+          "bulgur",
+          "couscous",
+          "seitan",
+          "freekeh",
+          "triticale"
+        ],
+        "reason": "wheat or wheat relatives",
+        "swap": "rice, quinoa, millet, buckwheat, or a gluten-free flour blend"
+      },
+      {
+        "terms": [
+          "barley",
+          "rye",
+          "malt",
+          "malt vinegar",
+          "malted",
+          "brewer's yeast",
+          "beer"
+        ],
+        "reason": "barley or rye",
+        "swap": "rice vinegar, apple cider vinegar, or gluten-free beer"
+      },
+      {
+        "terms": [
+          "bread",
+          "breadcrumbs",
+          "panko",
+          "pasta",
+          "noodles",
+          "spaghetti",
+          "macaroni",
+          "tortilla",
+          "tortillas",
+          "pita",
+          "naan",
+          "roti",
+          "chapati",
+          "crackers",
+          "udon",
+          "ramen",
+          "soba"
+        ],
+        "reason": "usually made with wheat",
+        "swap": "the gluten-free version (label it 'gluten-free ...' in the recipe), or rice/corn alternatives"
+      },
+      {
+        "terms": [
+          "soy sauce",
+          "teriyaki sauce",
+          "hoisin",
+          "hoisin sauce"
+        ],
+        "reason": "regular soy-based sauces contain wheat",
+        "swap": "tamari (gluten-free) or coconut aminos"
+      }
+    ],
+    "limit": [
+      {
+        "terms": [
+          "oats",
+          "oat",
+          "rolled oats",
+          "oat milk",
+          "oat flour"
+        ],
+        "note": "Use certified gluten-free oats; regular oats are often cross-contaminated."
+      },
+      {
+        "terms": [
+          "asafoetida",
+          "hing"
+        ],
+        "note": "Most asafoetida is cut with wheat flour; buy a gluten-free brand."
+      },
+      {
+        "terms": [
+          "stock cube",
+          "bouillon",
+          "vegetable stock",
+          "curry paste",
+          "miso"
+        ],
+        "note": "Check the label; some contain wheat or barley."
+      }
+    ]
+  },
+  "nut-free": {
+    "label": "Nut-Free",
+    "short": "NF",
+    "color": "#8A6E4B",
+    "description": "No tree nuts or peanuts, including nut milks, butters, flours and oils. Coconut and nutmeg are allowed by default.",
+    "includes": [],
+    "neutralizers": [
+      "nut-free",
+      "nut free"
+    ],
+    "safe_phrases": [
+      "coconut",
+      "nutmeg",
+      "butternut",
+      "water chestnut",
+      "water chestnuts",
+      "nutritional yeast",
+      "sunflower seed butter",
+      "pumpkin seeds",
+      "tiger nut"
+    ],
+    "avoid": [
+      {
+        "terms": [
+          "almond",
+          "almonds",
+          "cashew",
+          "cashews",
+          "walnut",
+          "walnuts",
+          "pecan",
+          "pecans",
+          "pistachio",
+          "pistachios",
+          "hazelnut",
+          "hazelnuts",
+          "macadamia",
+          "macadamias",
+          "brazil nut",
+          "brazil nuts",
+          "pine nut",
+          "pine nuts",
+          "chestnut",
+          "chestnuts",
+          "nut",
+          "nuts",
+          "praline",
+          "marzipan",
+          "nutella",
+          "frangipane"
+        ],
+        "reason": "tree nuts",
+        "swap": "pumpkin or sunflower seeds, toasted oats, or roasted chickpeas"
+      },
+      {
+        "terms": [
+          "peanut",
+          "peanuts",
+          "peanut butter",
+          "groundnut",
+          "groundnuts",
+          "satay"
+        ],
+        "reason": "peanuts",
+        "swap": "sunflower seed butter or tahini"
+      },
+      {
+        "terms": [
+          "almond milk",
+          "cashew milk",
+          "almond flour",
+          "almond meal",
+          "nut butter",
+          "cashew cream",
+          "pesto"
+        ],
+        "reason": "nut-based product (pesto usually contains pine nuts)",
+        "swap": "oat or soy milk, sunflower seed butter, or a seed-based pesto"
+      }
+    ],
+    "limit": []
+  },
+  "jain": {
+    "label": "Jain",
+    "short": "JN",
+    "color": "#9C6B98",
+    "description": "Lacto-vegetarian with no root or underground vegetables (onion, garlic, potato, carrot, ginger, etc.), no eggs, honey, mushrooms or alcohol. Many Jains also avoid eating after sunset.",
+    "includes": [
+      "vegetarian"
+    ],
+    "neutralizers": [
+      "jain"
+    ],
+    "safe_phrases": [
+      "dry ginger",
+      "dried ginger",
+      "ginger powder",
+      "ground ginger",
+      "sonth",
+      "saunth",
+      "turmeric powder",
+      "ground turmeric",
+      "eggplant",
+      "honeydew"
+    ],
+    "avoid": [
+      {
+        "terms": [
+          "onion",
+          "onions",
+          "garlic",
+          "shallot",
+          "shallots",
+          "leek",
+          "leeks",
+          "spring onion",
+          "scallion",
+          "scallions",
+          "chives"
+        ],
+        "reason": "onion & garlic family (root/bulb)",
+        "swap": "a pinch of asafoetida (hing)"
+      },
+      {
+        "terms": [
+          "potato",
+          "potatoes",
+          "sweet potato",
+          "carrot",
+          "carrots",
+          "beetroot",
+          "beet",
+          "beets",
+          "radish",
+          "radishes",
+          "daikon",
+          "turnip",
+          "turnips",
+          "yam",
+          "taro",
+          "arbi",
+          "cassava",
+          "parsnip",
+          "ginger",
+          "fresh ginger",
+          "turmeric root",
+          "fresh turmeric"
+        ],
+        "reason": "root or underground vegetable",
+        "swap": "raw banana, bottle gourd, pumpkin, cabbage, bell peppers, dry ginger powder"
+      },
+      {
+        "terms": [
+          "mushroom",
+          "mushrooms",
+          "yeast"
+        ],
+        "reason": "fungi (avoided by most Jains)",
+        "swap": "paneer, chickpeas, or more vegetables"
+      },
+      {
+        "terms": [
+          "egg",
+          "eggs",
+          "honey",
+          "wine",
+          "beer",
+          "alcohol",
+          "rum",
+          "vodka"
+        ],
+        "reason": "egg, honey or alcohol",
+        "swap": "flax egg, jaggery or maple syrup, vinegar or lemon juice"
+      }
+    ],
+    "limit": []
+  },
+  "sattvic": {
+    "label": "Sattvic",
+    "short": "SV",
+    "color": "#C99A2E",
+    "description": "Yogic diet of fresh, light foods: no onion, garlic, mushrooms, eggs, alcohol, caffeine or heavily fermented/processed foods. Root vegetables are allowed.",
+    "includes": [
+      "vegetarian"
+    ],
+    "neutralizers": [
+      "sattvic",
+      "satvik"
+    ],
+    "safe_phrases": [
+      "eggplant",
+      "decaf"
+    ],
+    "avoid": [
+      {
+        "terms": [
+          "onion",
+          "onions",
+          "garlic",
+          "shallot",
+          "shallots",
+          "leek",
+          "leeks",
+          "spring onion",
+          "scallion",
+          "scallions",
+          "chives"
+        ],
+        "reason": "onion & garlic family (considered rajasic/tamasic)",
+        "swap": "a pinch of asafoetida, fresh ginger, or herbs"
+      },
+      {
+        "terms": [
+          "mushroom",
+          "mushrooms"
+        ],
+        "reason": "fungi (considered tamasic)",
+        "swap": "paneer, tofu or more vegetables"
+      },
+      {
+        "terms": [
+          "egg",
+          "eggs",
+          "wine",
+          "beer",
+          "alcohol",
+          "rum",
+          "vodka",
+          "coffee",
+          "espresso",
+          "vinegar",
+          "soy sauce"
+        ],
+        "reason": "egg, alcohol, caffeine or fermented condiment",
+        "swap": "lemon juice, fresh herbs, herbal tea"
+      }
+    ],
+    "limit": [
+      {
+        "terms": [
+          "chili",
+          "chilli",
+          "chilies",
+          "chillies",
+          "cayenne",
+          "hot sauce"
+        ],
+        "note": "Keep heat gentle — strong spice is considered rajasic."
+      }
+    ]
+  }
+}

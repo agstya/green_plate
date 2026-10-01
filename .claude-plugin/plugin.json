@@ -1,0 +1,12 @@
+{
+  "name": "green-plate",
+  "version": "0.1.0",
+  "description": "Vegetarian & vegan recipes that respect every dietary restriction at once (low-FODMAP, gluten-free, nut-free, Jain, sattvic) — checked by a rules engine and delivered as a beautifully illustrated PDF cookbook.",
+  "author": {
+    "name": "Agastya Kommanamanchi"
+  },
+  "homepage": "https://github.com/agstya/green-plate",
+  "repository": "https://github.com/agstya/green-plate",
+  "license": "MIT",
+  "keywords": ["recipes", "vegetarian", "vegan", "low-fodmap", "gluten-free", "jain", "meal-planning", "pdf"]
+}

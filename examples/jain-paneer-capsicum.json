@@ -1,0 +1,45 @@
+{
+  "title": "Jain Paneer Capsicum Masala",
+  "description": "A rich, tangy tomato gravy with soft paneer and sweet capsicum — no onion, garlic or root vegetables, with asafoetida and dry ginger doing the heavy lifting.",
+  "cuisine": "North Indian",
+  "course": "Dinner",
+  "serves": 3,
+  "prep_min": 10,
+  "cook_min": 25,
+  "difficulty": "medium",
+  "diets": ["jain", "gluten-free", "nut-free"],
+  "ingredients": [
+    {"group": "Gravy", "item": "ghee", "qty": "2 tbsp"},
+    {"group": "Gravy", "item": "cumin seeds", "qty": "1 tsp"},
+    {"group": "Gravy", "item": "asafoetida (gluten-free)", "qty": "1/4 tsp"},
+    {"group": "Gravy", "item": "ripe tomatoes, pureed", "qty": "4 medium"},
+    {"group": "Gravy", "item": "dry ginger powder", "qty": "1/2 tsp"},
+    {"group": "Gravy", "item": "turmeric powder", "qty": "1/2 tsp"},
+    {"group": "Gravy", "item": "Kashmiri chili powder", "qty": "1 tsp"},
+    {"group": "Gravy", "item": "ground coriander", "qty": "1 1/2 tsp"},
+    {"group": "Gravy", "item": "melon seeds (magaz), soaked and ground", "qty": "2 tbsp", "note": "for creaminess"},
+    {"group": "Gravy", "item": "water", "qty": "1/2 cup"},
+    {"group": "Paneer & veg", "item": "paneer, cubed", "qty": "250 g"},
+    {"group": "Paneer & veg", "item": "green capsicum (bell pepper), diced", "qty": "1 large"},
+    {"group": "Finish", "item": "kasuri methi (dried fenugreek leaves)", "qty": "1 tsp"},
+    {"group": "Finish", "item": "garam masala", "qty": "1/2 tsp"},
+    {"group": "Finish", "item": "fresh cream", "qty": "2 tbsp", "optional": true},
+    {"group": "Finish", "item": "cilantro, chopped", "qty": "2 tbsp"},
+    {"group": "Finish", "item": "salt"}
+  ],
+  "steps": [
+    "Heat the ghee in a heavy pan. Add cumin seeds; when they crackle, add the asafoetida and stir for 10 seconds.",
+    "Pour in the tomato puree with the dry ginger, turmeric, chili powder and coriander. Cook on medium for 8–10 minutes until the oil separates.",
+    "Stir in the ground melon seeds and water and simmer for 3 minutes until the gravy is thick and glossy.",
+    "Add the capsicum and cook for 3 minutes so it keeps a little bite.",
+    "Fold in the paneer, crumble in the kasuri methi, add garam masala and salt, and simmer for 2 minutes.",
+    "Swirl in the cream if using, scatter cilantro and serve with steamed rice or jowar roti."
+  ],
+  "swaps": [
+    {"from": "onion & garlic", "to": "asafoetida (hing)", "why": "Gives savoury depth without any bulbs."},
+    {"from": "fresh ginger", "to": "dry ginger powder (sonth)", "why": "Fresh ginger is a root; dried ginger is accepted in most Jain kitchens."},
+    {"from": "cashew paste", "to": "melon seed paste", "why": "Same creaminess, and keeps it nut-free."}
+  ],
+  "tips": ["Many Jain households also eat before sunset — this cooks in about 35 minutes."],
+  "nutrition": {"calories": 390, "protein_g": 17, "carbs_g": 13, "fat_g": 30, "fiber_g": 3}
+}
