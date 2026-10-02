@@ -5,8 +5,8 @@
   "author": {
     "name": "Agastya Kommanamanchi"
   },
-  "homepage": "https://github.com/agstya/green-plate",
-  "repository": "https://github.com/agstya/green-plate",
+  "homepage": "https://github.com/agstya/green_plate",
+  "repository": "https://github.com/agstya/green_plate",
   "license": "MIT",
   "keywords": ["recipes", "vegetarian", "vegan", "low-fodmap", "gluten-free", "jain", "meal-planning", "pdf"]
 }

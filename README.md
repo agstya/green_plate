@@ -42,7 +42,7 @@ Diets combine. A recipe tagged `["vegan", "low-fodmap", "gluten-free"]` must pas
 **Claude Code / Cowork (plugin marketplace)**
 
 ```
-/plugin marketplace add agstya/green-plate
+/plugin marketplace add agstya/green_plate
 /plugin install green-plate@green-plate-marketplace
 ```
 
